@@ -1,0 +1,253 @@
+{% extends 'manba.html' %}    
+{% load static %}
+{% block content %}
+
+
+    <section class="home-slider ftco-degree-bg">
+      <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-10 ftco-animate text-center">
+              <h1 class="mb-4">Maqsadimiz: 
+                <strong class="typewrite" data-period="4000" data-type='[ "Dasturlash.", "Yuqori Dizayn.", "Rivojlanish." ]'>
+                  <span class="wrap"></span>
+                </strong>
+              </h1>
+              <p></p>
+             <!-- <p><a href="{% static 'jamoa.mp4' %}" class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo"><span class="ion-ios-play mr-2"></span> Watch Video</a></p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END slider -->
+
+    
+
+    <section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Bizning xizmatlar</span>
+            <h2>Bizning Faoliyat turlar</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-1 d-flex justify-content-center mb-3"><span class="align-self-center icon-layers"></span></div></div>
+              <div class="media-body p-2">
+                <h3 class="heading">Kampyuter Uchun Dasturlar</h3>
+                <p>Kampyuter dasturlari orqali samaradorlikni oshiring.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-2 d-flex justify-content-center mb-3"><span class="align-self-center icon-gears"></span></div></div>
+              <div class="media-body p-2">
+                <h3 class="heading">Web Sayt Tayyorlash</h3>
+                <!-- Bugungi kun har bir biznesning rasmiy web sayti bo'lishini talab etmoqda.Mijozlar biznesingiz haqida to'liq ma'lumotni web saytingizdan olishi mumkun.O'zi to'liq ma'lumotga ega bo'lmagan narsaga ishonchi ham so'roq ostida bo'ladi.Web saytingiz o'qali insonlarga to'liq ma'lumot bering va mijozlar ishonchini qozoning. -->
+                <p>Web sayt orqali biznesingizni rivojlantiring</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-3 d-flex justify-content-center mb-3"><span class="align-self-center icon-paper-plane"></span></div></div>
+              <div class="media-body p-2">
+                <h3 class="heading">Telegram Bot Tayyorlash</h3>
+                <p>Telegram bot orqali masalaga yechim toping. </p>
+              </div>
+            </div>    
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-4 d-flex justify-content-center mb-3"><span class="align-self-center icon-live_help"></span></div></div>
+              <div class="media-body p-2">
+                <h3 class="heading">Qo'llab quvvatlash &amp; Jamiyat</h3>
+                <p>IT sohasiga oid savollaringizga javob va maslahatlar oling.</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- 
+    <section class="ftco-section-parallax ftco-degree-bg">
+      <div class="parallax-img d-flex align-items-center">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-10 text-center heading-section heading-section-white ftco-animate">
+              <h2 class="h1 font-weight-bold">Turn every channel into a revenue channel and drive business growth</h2>
+              <p><a href="#" class="btn btn-primary btn-outline-white mt-3 py-3 px-4">View more details</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="ftco-section">
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Ishlar</span>
+            <h2>Biz Qilgan Loyihalar</h2>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="block-3 d-md-flex ftco-animate">
+            <a href="{% url 'portfolio' %}" class="image" style="background-image: url({% static 'images/work-1.jpg' %}); "></a>
+            <div class="text">
+              <h4 class="subheading">Illustration</h4>
+              <h2 class="heading"><a href="{% url 'portfolio' %}">Even the all-powerful Pointing has no control</a></h2>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+            </div>
+          </div>
+          <div class="block-3 d-md-flex ftco-animate">
+            <a href="{% url 'portfolio' %}" class="image order-2" style="background-image: url({% static 'images/work-2.jpg' %}); "></a>
+            <div class="text order-1">
+              <h4 class="subheading">Application</h4>
+              <h2 class="heading"><a href="{% url 'portfolio' %}">Even the all-powerful Pointing has no control</a></h2>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+            </div>
+          </div>
+          <div class="block-3 d-md-flex ftco-animate">
+            <a href="{% url 'portfolio' %}" class="image" style="background-image: url({% static 'images/work-3.jpg' %}); "></a>
+            <div class="text">
+              <h4 class="subheading">Web Design</h4>
+              <h2 class="heading"><a href="{% url 'portfolio' %}">Even the all-powerful Pointing has no control</a></h2>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+    <section class="ftco-section testimony-section ftco-degree-bg">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Jamoa</span>
+            <h2>Bizning jamoa</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              {% for jamoa_azosi in jamoa %}
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url({{jamoa_azosi.rasm.url}})">
+                    
+                  </div>
+                  <div class="text">
+                    <p class="mb-5"></p>
+                    <p class="name">{{jamoa_azosi.ism}}<br>{{jamoa_azosi.familya}}</p>
+                    <span class="position">{{jamoa_azosi.soha}}</span>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     
+    <!-- <section class="ftco-section ftco-counter ftco-degree-bg" id="section-counter">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+            <h2>Our achievements</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                
+                <strong class="number" data-number="{{M}}">0</strong>
+                
+                <span>Mijozlar bizning professional yordamimizdan mamnun</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="12000">0</strong>
+                <span>Aralashtirilgan va birlashtiriladigan ajoyib oldindan o'rnatilgan variantlar</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="10000">0</strong>
+                <span>Jonli suhbatni qo'llab-quvvatlash kanalidagi o'rtacha javob vaqti</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Blog</span>
+            <h2>Blog Post</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20" style="background-image: url({% static 'images/image_1.jpg' %});">
+              </a>
+              <div class="text p-4 d-block">
+                <div class="meta mb-3">
+                  <div><a href="#">July 12, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry" data-aos-delay="100">
+              <a href="{% url 'blog_single' %}" class="block-20" style="background-image: url({% static 'images/image_2.jpg' %});">
+              </a>
+              <div class="text p-4">
+                <div class="meta mb-3">
+                  <div><a href="#">Sentabr 02 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry" data-aos-delay="200">
+              <a href="blog-single.html" class="block-20" style="background-image: url({% static 'images/image_3.jpg' %});">
+              </a>
+              <div class="text p-4">
+                <div class="meta mb-3">
+                  <div><a href="#">July 12, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    {% endblock content%}

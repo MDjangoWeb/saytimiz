@@ -1,0 +1,106 @@
+{% extends 'manba.html' %}
+{% load static %}
+{% block content %}
+
+
+     <section class="home-slider ftco-degree-bg">
+      <div class="slider-item bread-wrap" style="background-image: url({% static 'images/bg_1.jpg'%});" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text justify-content-center align-items-center">
+            <div class="col-md-10 col-sm-12 ftco-animate mb-4 text-center">
+              <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'index' %}">Asosiy</a></span> <span>Haqimizda</span></p>
+              <h1 class="mb-3 bread">Biz Haqimizda</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section-2 ftco-degree-bg">
+      <div class="container d-flex">
+        <div class="section-2-blocks-wrapper row d-flex">
+          <div class="img col-sm-12 col-lg-6 order-last" style="background-image: url({%static 'images/about.jpg'%});">
+          </div>
+          <div class="text col-lg-6 order-first ftco-animate">
+            <div class="text-inner align-self-start">
+              <h3 class="heading">Saytimizga xush kelibsiz</h3>
+              <p>Assalomu alaykum. Sizni Web saytimizda ko'rib turganimizdan bag'oyatda hursandmiz.Bizning faoliyatimizga bildirgan qiziqishingiz uchun minnatdormiz</p>
+
+              <p>Biznesda IT texnalogiyalarni qo'llash rivojlanishni keskin oshiradi. Zamonaviy texnalogiyalardan foydalanib, Biz bilan birga o'z biznesingizni rivojlantiring</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- 
+    <section class="ftco-section ftco-counter ftco-degree-bg" id="section-counter">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+            <h2>Bizning yutuqlarimiz</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Customers are satisfied with our professional support</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="12000">0</strong>
+                <span>Amazing preset options to be mixed and combined</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="10000">0</strong>
+                <span>Average response time on live chat support channel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <section class="ftco-section testimony-section ftco-degree-bg">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Bizning Jamoa</span>
+            <h2>Jamoa azolari</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              {% for jamoa_azosi in jamoa %}
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url({{jamoa_azosi.rasm.url}})">
+                    
+                  </div>
+                  <div class="text">
+                    
+                    <p class="name">{{jamoa_azosi.ism}}<br>{{jamoa_azosi.familya}}</p>
+                    <span class="position">{{jamoa_azosi.soha}}</span>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    {% endblock content %}

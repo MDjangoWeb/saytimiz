@@ -1,0 +1,66 @@
+{% extends 'manba.html' %}
+{% load static %}
+{% block content %}
+    
+    <section class="home-slider ftco-degree-bg">
+      <div class="slider-item bread-wrap" style="background-image: url({% static 'images/bg_1.jpg' %});" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text justify-content-center align-items-center">
+            <div class="col-md-10 col-sm-12 ftco-animate mb-4 text-center">
+              <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'index' %}">Asosiy</a></span> <span>Aloqa</span></p>
+              <h1 class="mb-3 bread">Biz Bilan Aloqa</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-degree-bg">
+      <div class="container bg-light">
+        <div class="row d-flex mb-5 contact-info">
+          <div class="col-md-12 mb-4">
+            <h2 class="h4">Bog'lanish uchun ma'lumotlar</h2>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-md-3">
+            <p><span>Manzil:</span> Andijon</p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Tel:</span> <a href="tel://+998934152998">+998 93 415 29 98</a></p>
+          </div>
+          <!-- <div class="col-md-3">
+            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+          </div> -->
+        </div>
+        <div class="row block-9">
+          <div class="col-md-6 pr-md-5">
+            <form action="{% url 'contact' %}" method = POST>
+              {% csrf_token %}
+              <div class="form-group">
+                <input type="text" class="form-control" name = "ism" placeholder="Ismingiz">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="mavzu" placeholder="Qanday mavzuda muroja't qilmoqdasiz">
+              </div>
+              <div class="form-group">
+                <textarea name="matn" id="" cols="30" rows="7" class="form-control" placeholder="Xabar"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Yuborish" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          
+          </div>
+
+          <!-- <div class="col-md-6" id="map"></div> -->
+        </div>
+      </div>
+    </section>
+{% endblock content %}
